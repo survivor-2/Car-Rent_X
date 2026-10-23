@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honda City | CarRentX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="vehicle">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">🚙CarRent<b>X</b></a>
+    <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="carselection.html" aria-current="page">Cars</a>
+      <a href="booking.html">Booking</a>
+      <a href="renter-details.html">Personal info</a>
+      <a class="cta" href="login.html">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="crumbs"><a href="index.html">Home</a> / <a href="carselection.html">Cars</a> / Honda City</p>
+
+  <section class="detail">
+    <div class="detail-img"><img src="photos/cars/honda-city.jpg" data-fallback="photos/Honda-City-Safety-Advt-web9.jpg" alt="Honda City"></div>
+    <div class="detail-info">
+      <span class="tag">Sedan</span>
+      <h1>Honda City</h1>
+      <p class="lead">A comfortable sedan with a smooth automatic gearbox. Made for long, relaxed highway drives.</p>
+      <div class="price">₹1,800<small> / day</small></div>
+      <div class="facts"><div><span>Seats</span><strong>5</strong></div><div><span>Engine</span><strong>Petrol, 1.5L i-VTEC</strong></div><div><span>Transmission</span><strong>Automatic (CVT)</strong></div><div><span>Mileage</span><strong>17–18 kmpl</strong></div><div><span>Comfort</span><strong>Sunroof available</strong></div><div><span>Best for</span><strong>Highway and business trips</strong></div></div>
+      <div class="detail-actions">
+        <a class="btn" href="booking.html?car=Honda%20City">Book this car</a>
+        <a class="btn btn-line" href="carselection.html">See all cars</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="section-head"><h2>Popular journeys in the Honda City</h2><p>Routes where a smooth ride and a roomy boot make the difference. Distances and times are approximate.</p></div>
+    <div class="grid">
+      <article class="card">
+          <img src="photos/places/taj-mahal.jpg" data-fallback="photos/ChatGPT%20Image%20Apr%2022,%202025,%2011_19_34%20PM.png" alt="The Taj Mahal" loading="lazy">
+          <div class="card-body"><h3>Delhi to Agra</h3><span class="meta">About 230 km, 3.5–4 hours</span><p>Cruise down the expressway to the Taj Mahal in comfort.</p></div>
+      </article>
+      <article class="card">
+          <img src="photos/places/rajasthan.jpg" data-fallback="photos/pexels-fotoholic-studio-1265102260-23996214.jpg" alt="Rajasthan desert" loading="lazy">
+          <div class="card-body"><h3>Delhi to Jaipur</h3><span class="meta">About 280 km, 5–6 hours</span><p>An easy highway run to the forts and palaces of Rajasthan.</p></div>
+      </article>
+      <article class="card">
+          <img src="photos/places/chandigarh.jpg" data-fallback="photos/places/4665830_29440_1_1791916222672.avif" alt="Chandigarh city" loading="lazy">
+          <div class="card-body"><h3>Delhi to Chandigarh</h3><span class="meta">About 250 km, 4–5 hours</span><p>A fast, well-built highway where the automatic gearbox keeps the drive effortless.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section last">
+    <div class="section-head"><h2>Compare with other cars</h2></div>
+    <div class="grid">
+      <a class="card" href="vehicles.html"><div class="card-body"><h3>Swift</h3><span class="tag">Hatchback</span><div class="price">₹1,200<small> / day</small></div><p>Lowest daily rate and great mileage for city runs.</p></div></a>
+      <a class="card" href="vehicle3.html"><div class="card-body"><h3>Tata Nexon</h3><span class="tag">Crossover SUV</span><div class="price">₹2,200<small> / day</small></div><p>Extra space and ground clearance for hills and family trips.</p></div></a>
+      <a class="card" href="vehicle4.html"><div class="card-body"><h3>Mercedes C-Class</h3><span class="tag">Luxury sedan</span><div class="price">₹6,500<small> / day</small></div><p>Premium comfort for business trips and special occasions.</p></div></a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 CarRentX. All rights reserved.</span>
+    <nav aria-label="Footer">
+      <a href="carselection.html">Cars</a>
+      <a href="start-exploring.html">Explore</a>
+      <a href="booking.html">Booking</a>
+      <a href="login.html">Log in</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

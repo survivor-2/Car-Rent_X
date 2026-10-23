@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in | CarRentX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="login">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">🚙CarRent<b>X</b></a>
+    <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="carselection.html">Cars</a>
+      <a href="booking.html">Booking</a>
+      <a href="renter-details.html">Personal info</a>
+      <a class="cta" href="login.html" aria-current="page">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<main class="auth">
+  <div class="auth-art" style="background-image:url('WhatsApp Image 2026-10-23 at 15.32.06.jpeg'); background-size:cover; background-position:center;">
+    <video autoplay muted loop playsinline poster="video/hero-poster.jpg"><source src="video/hero-cars.mp4" type="video/mp4"></video>
+    <div class="auth-copy"><h2>Your next road trip starts here</h2><p>Log in to manage bookings and pick up where you left off.</p></div>
+  </div>
+
+  <div class="auth-form">
+    <div class="panel">
+      <h1>Welcome back</h1>
+      <p class="sub">Log in to your CarRentX account.</p>
+      <div class="msg err" id="msg" role="alert"></div>
+
+      <form id="f" novalidate>
+        <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+        <div class="field"><label for="pw">Password</label><input id="pw" type="password" autocomplete="current-password" placeholder="Enter your password" required></div>
+        <div class="row-between"><label><input type="checkbox" id="remember"> Remember me</label><a href="#" id="forgot">Forgot password?</a></div>
+        <button class="btn btn-block" type="submit">Log in</button>
+      </form>
+
+      <p class="switch">New to CarRentX? <a href="signup.html">Create an account</a></p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 CarRentX. All rights reserved.</span>
+    <nav aria-label="Footer">
+      <a href="carselection.html">Cars</a>
+      <a href="start-exploring.html">Explore</a>
+      <a href="booking.html">Booking</a>
+      <a href="login.html">Log in</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

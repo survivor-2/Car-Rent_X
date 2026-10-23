@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My profile | CarRentX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="profile">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">🚙CarRent<b>X</b></a>
+    <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="carselection.html">Cars</a>
+      <a href="booking.html">Booking</a>
+      <a href="renter-details.html" aria-current="page">Personal info</a>
+      <a class="cta" href="login.html">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-title"><div class="wrap"><h1>My profile</h1><p>Keep your details up to date so pickup is quick.</p></div></div>
+
+<main class="wrap profile">
+  <aside class="side">
+    <div class="box who"><div class="avatar" id="av">?</div><h2 id="dn">Your name</h2><p id="de">Add your details</p></div>
+    <div class="box">
+      <h3><span>Profile completion</span><span id="pct">0%</span></h3>
+      <div class="progress" role="progressbar" aria-label="Profile completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="pb"><i id="bar"></i></div>
+      <ul class="checks" id="checks">
+        <li data-g="p">Personal details</li><li data-g="c">Contact information</li><li data-g="l">Driving licence</li><li data-g="a">Address</li>
+      </ul>
+    </div>
+  </aside>
+
+  <form id="f" novalidate>
+    <div class="msg ok" id="ok" role="status">Profile saved on this device. We'll use these details to fill in your bookings.</div>
+    <div class="msg err" id="err" role="alert"></div>
+
+    <section class="section-card"><h2>Personal details</h2><p>As they appear on your driving licence.</p>
+      <div class="row">
+        <div class="field"><label for="name">Full name</label><input id="name" autocomplete="name" required></div>
+        <div class="field"><label for="dob">Date of birth</label><input id="dob" type="date" autocomplete="bday" required></div>
+      </div>
+    </section>
+
+    <section class="section-card"><h2>Contact information</h2><p>We send booking confirmations here.</p>
+      <div class="row">
+        <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="phone">Mobile number</label><input id="phone" type="tel" autocomplete="tel" placeholder="98765 43210" required></div>
+      </div>
+    </section>
+
+    <section class="section-card"><h2>Driving licence</h2><p>You need a valid licence to collect the car.</p>
+      <div class="row">
+        <div class="field"><label for="lno">Licence number</label><input id="lno" autocomplete="off" required></div>
+        <div class="field"><label for="lexp">Expiry date</label><input id="lexp" type="date" required></div>
+      </div>
+      <div class="field"><label for="lic">Upload licence (image or PDF)</label><input id="lic" type="file" accept="image/*,.pdf"><p class="hint" id="fh">Make sure all four corners are visible and the text is readable. Maximum 5 MB.</p></div>
+    </section>
+
+    <section class="section-card"><h2>Address</h2><p>Your current residential address.</p>
+      <div class="field"><label for="addr">Street address</label><input id="addr" autocomplete="street-address" required></div>
+      <div class="row3">
+        <div class="field"><label for="city">City</label><input id="city" autocomplete="address-level2" required></div>
+        <div class="field"><label for="state">State</label><input id="state" autocomplete="address-level1" required></div>
+        <div class="field"><label for="pin">PIN code</label><input id="pin" inputmode="numeric" maxlength="6" autocomplete="postal-code" required></div>
+      </div>
+    </section>
+
+    <div class="save-bar"><a class="btn btn-line" href="booking.html">Back to booking</a><button class="btn" type="submit">Save profile</button></div>
+    <p class="secure">Your documents are used only to verify your identity for rentals.</p>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 CarRentX. All rights reserved.</span>
+    <nav aria-label="Footer">
+      <a href="carselection.html">Cars</a>
+      <a href="start-exploring.html">Explore</a>
+      <a href="booking.html">Booking</a>
+      <a href="login.html">Log in</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

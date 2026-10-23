@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book your car | CarRentX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="booking">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">🚙CarRent<b>X</b></a>
+    <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="carselection.html">Cars</a>
+      <a href="booking.html" aria-current="page">Booking</a>
+      <a href="renter-details.html">Personal info</a>
+      <a class="cta" href="login.html">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-title">
+  <div class="wrap"><h1>Book your ride</h1><p>Choose your dates and details to plan your next journey.</p></div>
+</div>
+
+<main class="section">
+  <div class="wrap">
+    <div class="booking-layout">
+
+      <section class="booking-panel">
+        <h2>Booking details</h2>
+
+        <form id="bookingForm">
+          <div class="form-grid">
+
+            <div class="field full">
+              <label for="car">Select your car</label>
+              <select id="car" name="car" required>
+                <option value="">Choose a car</option>
+                <option value="Maruti Suzuki Swift" data-price="1200" data-category="Hatchback">Maruti Suzuki Swift — ₹1,200/day</option>
+                <option value="Honda City" data-price="1800" data-category="Sedan">Honda City — ₹1,800/day</option>
+                <option value="Tata Nexon" data-price="2200" data-category="Crossover SUV">Tata Nexon — ₹2,200/day</option>
+                <option value="Mercedes C-Class" data-price="6500" data-category="Luxury sedan">Mercedes C-Class — ₹6,500/day</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="pickupDate">Pickup date</label>
+              <input type="date" id="pickupDate" name="pickupDate" required>
+            </div>
+
+            <div class="field">
+              <label for="returnDate">Return date</label>
+              <input type="date" id="returnDate" name="returnDate" required>
+            </div>
+
+            <div class="field">
+              <label for="pickupTime">Pickup time</label>
+              <input type="time" id="pickupTime" name="pickupTime" value="10:00" required>
+            </div>
+
+            <div class="field">
+              <label for="returnTime">Return time</label>
+              <input type="time" id="returnTime" name="returnTime" value="10:00" required>
+            </div>
+
+            <div class="field full">
+              <label for="pickupLocation">Pickup location</label>
+              <select id="pickupLocation" name="pickupLocation" required>
+                <option value="">Choose pickup location</option>
+                <option value="Greater Noida">Greater Noida</option>
+                <option value="Noida">Noida</option>
+                <option value="Ghaziabad">Ghaziabad</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Other">Other / arrange with provider</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="fullName">Full name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Enter your name" autocomplete="name" required>
+            </div>
+
+            <div class="field">
+              <label for="phone">Mobile number</label>
+              <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" autocomplete="tel-national" title="Enter a 10-digit Indian mobile number" required>
+            </div>
+
+            <div class="field full">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            </div>
+
+            <div class="field full">
+              <label for="notes">Additional requests (optional)</label>
+              <textarea id="notes" name="notes" rows="3" placeholder="Any special requirements?"></textarea>
+            </div>
+
+          </div>
+
+          <button class="btn btn-dark btn-block" type="submit">Submit booking request</button>
+
+          <div id="formMessage" class="msg" role="status" aria-live="polite" style="margin:18px 0 0"></div>
+        </form>
+      </section>
+
+      <aside class="summary-panel">
+        <h2>Your reservation</h2>
+
+        <div class="summary-car">
+          <span class="tag" id="carCategory">Choose a car</span>
+          <h3 id="summaryCarName">No car selected</h3>
+          <div class="summary-price">₹<span id="dailyPrice">0</span><small> / day</small></div>
+        </div>
+
+        <div class="price-row"><span>Rental duration</span><span id="duration">0 days</span></div>
+        <div class="price-row"><span>Daily rental rate</span><span id="rate">₹0</span></div>
+        <div class="price-row total"><span>Estimated total</span><span id="total">₹0</span></div>
+
+        <p class="booking-note">
+          This is an estimated rental cost only. Taxes, deposits, insurance, fuel and additional
+          charges are not included. Your booking is not confirmed until the rental provider
+          verifies availability and confirms your request.
+        </p>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 CarRentX. All rights reserved.</span>
+    <nav aria-label="Footer">
+      <a href="carselection.html">Cars</a>
+      <a href="start-exploring.html">Explore</a>
+      <a href="booking.html">Booking</a>
+      <a href="login.html">Log in</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

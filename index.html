@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover your next drive with CarRentX. Browse cars, plan your journey and book your ride.">
+  <title>Rent your ride | CarRentX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#030405">
+  <script type="module" src="car-scene.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body data-page="home">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">🚙CarRent<b>X</b></a>
+    <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="carselection.html">Cars</a>
+      <a href="booking.html">Booking</a>
+      <a href="renter-details.html">Personal info</a>
+      <a class="cta" href="login.html">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Cinematic 3D hero -->
+<section class="hero-3d">
+  <div id="car-scene" aria-hidden="true">
+    <div class="scene-fallback"></div>
+  </div>
+
+  <div class="hero-vignette" aria-hidden="true"></div>
+
+  <div class="wrap hero-content">
+    <span class="hero-eyebrow"><span class="status-dot"></span>YOUR DRIVE. YOUR RULES.</span>
+
+    <h1>Start your adventure with CarRentX</h1>
+
+    <p>Pick a car, set your dates and hit the road. Simple, affordable rentals for every kind of trip.</p>
+
+    <div class="actions">
+      <a class="btn" href="carselection.html">Browse cars</a>
+      <a class="btn btn-ghost" href="start-exploring.html">Start exploring</a>
+    </div>
+  </div>
+
+  <div class="hero-bottom-label" aria-hidden="true">
+    <span>01 / DISCOVER THE DRIVE</span>
+    <span>BUILT FOR THE JOURNEY</span>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div><strong>Transparent daily pricing</strong><span>Rates start at ₹1,200 per day.</span></div>
+    <div><strong>Hatchbacks to luxury sedans</strong><span>Choose the car that fits your trip.</span></div>
+    <div><strong>Book in minutes</strong><span>One short form from choice to request.</span></div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Popular cars for your journey</h2>
+      <p>Our most-booked cars for city runs, highway drives and family trips.</p>
+    </div>
+    <div class="grid">
+      <a class="card" href="vehicles.html">
+        <img src="photos/cars/swift.jpg" data-fallback="photos/Maruti-Swift-2018-Review-Specs-In-India-M8.jpg" alt="Maruti Suzuki Swift" loading="lazy">
+        <div class="card-body">
+          <h3>Swift</h3>
+          <span class="tag">Hatchback</span>
+          <p>Light, efficient and easy to park. A good choice for city and highway driving.</p>
+        </div>
+      </a>
+      <a class="card" href="vehicle2.html">
+        <img src="photos/cars/honda-city.jpg" data-fallback="photos/Honda-City-Safety-Advt-web9.jpg" alt="Honda City" loading="lazy">
+        <div class="card-body">
+          <h3>Honda City</h3>
+          <span class="tag">Sedan</span>
+          <p>A comfortable sedan with a smooth automatic gearbox for long drives.</p>
+        </div>
+      </a>
+      <a class="card" href="vehicle3.html">
+        <img src="photos/cars/tata-nexon.jpg" data-fallback="photos/tata-nexon.jpg|photos/pexels-mohit-hambiria-92377455-19992232.jpg" alt="Tata Nexon" loading="lazy">
+        <div class="card-body">
+          <h3>Tata Nexon</h3>
+          <span class="tag">Crossover SUV</span>
+          <p>Ground clearance and space for family trips and rougher roads.</p>
+        </div>
+      </a>
+    </div>
+    <p style="margin-top:26px"><a class="btn btn-line" href="carselection.html">See all cars</a></p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Where our cars have been</h2>
+      <p>Destinations our renters keep coming back to.</p>
+    </div>
+    <div class="dest">
+      <figure>
+        <img src="photos/places/manali.jpg" data-fallback="photos/pexels-mohit-hambiria-92377455-19992232.jpg" alt="Mountain road near Manali" loading="lazy">
+        <figcaption><h3>Manali</h3><p>Gateway to the Himalayas, where adventure meets serenity.</p></figcaption>
+      </figure>
+      <figure>
+        <img src="photos/places/rajasthan.jpg" data-fallback="photos/pexels-fotoholic-studio-1265102260-23996214.jpg" alt="Rajasthan desert" loading="lazy">
+        <figcaption><h3>Rajasthan</h3><p>From majestic forts to golden dunes.</p></figcaption>
+      </figure>
+      <figure>
+        <img src="photos/places/taj-mahal.jpg" data-fallback="photos/ChatGPT%20Image%20Apr%2022,%202025,%2011_19_34%20PM.png" alt="The Taj Mahal" loading="lazy">
+        <figcaption><h3>Taj Mahal</h3><p>The crown jewel of India, a wonder in white.</p></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 CarRentX. All rights reserved.</span>
+    <nav aria-label="Footer">
+      <a href="carselection.html">Cars</a>
+      <a href="start-exploring.html">Explore</a>
+      <a href="booking.html">Booking</a>
+      <a href="login.html">Log in</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

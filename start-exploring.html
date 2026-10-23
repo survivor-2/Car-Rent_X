@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start exploring | CarRentX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="explore">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">🚙CarRent<b>X</b></a>
+    <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="carselection.html" aria-current="page">Cars</a>
+      <a href="booking.html">Booking</a>
+      <a href="renter-details.html">Personal info</a>
+      <a class="cta" href="login.html">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-title"><div class="wrap">
+  <span class="eyebrow">Plan your trip</span>
+  <h1>Start exploring</h1>
+  <p>Pick a car, choose a destination and grab a deal. Your next road trip is a few clicks away.</p>
+</div></div>
+
+<section class="section"><div class="wrap">
+  <div class="section-head"><h2>Featured cars</h2><p>Hand-picked cars for the trips our renters book most.</p></div>
+  <div class="grid">
+    <article class="card">
+      <img src="photos/cars/swift.jpg" data-fallback="photos/Maruti-Swift-2018-Review-Specs-In-India-M8.jpg" alt="Maruti Suzuki Swift" loading="lazy">
+      <div class="card-body">
+        <span class="tag">Hatchback</span>
+        <h3>Maruti Suzuki Swift</h3>
+        <div class="price">₹1,200 <small>/ day</small></div>
+        <ul class="specs"><li>5 seats</li><li>Petrol (1.2L K-Series)</li><li>Manual transmission</li></ul>
+        <div class="card-actions">
+          <a class="btn btn-line" href="vehicles.html">Details</a>
+          <a class="btn btn-dark" href="booking.html?car=Maruti%20Suzuki%20Swift">Book now</a>
+        </div>
+      </div>
+    </article>
+    <article class="card">
+      <img src="photos/cars/honda-city.jpg" data-fallback="photos/Honda-City-Safety-Advt-web9.jpg" alt="Honda City" loading="lazy">
+      <div class="card-body">
+        <span class="tag">Sedan</span>
+        <h3>Honda City</h3>
+        <div class="price">₹1,800 <small>/ day</small></div>
+        <ul class="specs"><li>5 seats</li><li>Petrol (1.5L i-VTEC)</li><li>Automatic (CVT)</li></ul>
+        <div class="card-actions">
+          <a class="btn btn-line" href="vehicle2.html">Details</a>
+          <a class="btn btn-dark" href="booking.html?car=Honda%20City">Book now</a>
+        </div>
+      </div>
+    </article>
+    <article class="card">
+      <img src="photos/cars/tata-nexon.jpg" data-fallback="photos/tata-nexon.jpg|photos/pexels-mohit-hambiria-92377455-19992232.jpg" alt="Tata Nexon" loading="lazy">
+      <div class="card-body">
+        <span class="tag">Crossover SUV</span>
+        <h3>Tata Nexon</h3>
+        <div class="price">₹2,200 <small>/ day</small></div>
+        <ul class="specs"><li>5 seats</li><li>Petrol (1.2L turbo)</li><li>208 mm ground clearance</li></ul>
+        <div class="card-actions">
+          <a class="btn btn-line" href="vehicle3.html">Details</a>
+          <a class="btn btn-dark" href="booking.html?car=Tata%20Nexon">Book now</a>
+        </div>
+      </div>
+    </article>
+  </div>
+  <p style="margin-top:26px"><a class="btn btn-line" href="carselection.html">See all cars</a></p>
+</div></section>
+
+<section class="section alt"><div class="wrap">
+  <div class="section-head"><h2>Popular destinations</h2><p>Routes our cars have covered, from mountain passes to palaces.</p></div>
+  <div class="dest">
+      <figure>
+        <img src="photos/places/manali.jpg" data-fallback="photos/pexels-mohit-hambiria-92377455-19992232.jpg" alt="Mountain road near Manali" loading="lazy">
+        <figcaption><h3>Manali</h3><p>Gateway to the Himalayas, where adventure meets serenity.</p></figcaption>
+      </figure>
+      <figure>
+        <img src="photos/places/rajasthan.jpg" data-fallback="photos/pexels-fotoholic-studio-1265102260-23996214.jpg" alt="Fort in Rajasthan" loading="lazy">
+        <figcaption><h3>Jaipur &amp; Rajasthan</h3><p>Majestic forts and golden dunes.</p></figcaption>
+      </figure>
+      <figure>
+        <img src="photos/places/taj-mahal.jpg" data-fallback="photos/ChatGPT%20Image%20Apr%2022,%202025,%2011_19_34%20PM.png" alt="The Taj Mahal" loading="lazy">
+        <figcaption><h3>Taj Mahal, Agra</h3><p>The crown jewel of India, a wonder in white.</p></figcaption>
+      </figure>
+  </div>
+  <div class="chips"><small>More routes people book:</small><span>Goa beaches</span><span>Leh Ladakh</span><span>Rishikesh</span><span>Jaipur fort</span></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="section-head"><h2>Find your route</h2><p>Start from Delhi and plan the drive.</p></div>
+  <div class="map-wrap">
+    <iframe title="Map of Delhi" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83913930857!2d77.06889754743187!3d28.527582000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1c6b3ad8c9f3%3A0x9df6d711e49c4b7c!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1684400751362!5m2!1sen!2sin" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div></section>
+
+<section class="section tight last"><div class="wrap">
+  <div class="section-head"><h2>Special deals &amp; offers</h2><p>Save more on longer trips and seasonal bookings.</p></div>
+  <div class="deals">
+    <div class="deal"><b>Book for 5 days, get 1 day free</b><span>Applies to any car on longer trips.</span></div>
+    <div class="deal"><b>15% off all rentals in December</b><span>Seasonal discount for winter road trips.</span></div>
+  </div>
+  <p class="fineprint">Offers are applied by the rental provider when your booking is confirmed. They are not included in the estimate on the booking page.</p>
+</div></section>
+
+<section class="cta-band"><div class="wrap">
+  <h2>Ready to hit the road?</h2>
+  <p>Choose your car and book in a few minutes.</p>
+  <a class="btn" href="carselection.html">Choose a car</a>
+</div></section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 CarRentX. All rights reserved.</span>
+    <nav aria-label="Footer">
+      <a href="carselection.html">Cars</a>
+      <a href="start-exploring.html">Explore</a>
+      <a href="booking.html">Booking</a>
+      <a href="login.html">Log in</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

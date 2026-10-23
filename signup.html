@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up | CarRentX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="signup">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">🚙CarRent<b>X</b></a>
+    <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="carselection.html">Cars</a>
+      <a href="booking.html">Booking</a>
+      <a href="renter-details.html">Personal info</a>
+      <a class="cta" href="login.html" aria-current="page">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<main class="auth">
+  <div class="auth-art" style="background-image:url('photos/pexels-mohit-hambiria-92377455-19992232.jpg'),url('photos/places/manali.jpg')">
+    <div class="auth-copy"><h2>Drive somewhere new</h2><p>Create an account to book cars in a few minutes.</p></div>
+  </div>
+
+  <div class="auth-form">
+    <div class="panel">
+      <h1>Create your account</h1>
+      <p class="sub">It takes less than a minute.</p>
+      <div class="msg err" id="msg" role="alert"></div>
+
+      <form id="f" novalidate>
+        <div class="field"><label for="name">Full name</label><input id="name" autocomplete="name" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="pw">Password</label><input id="pw" type="password" autocomplete="new-password" required><p class="hint">Use at least 6 characters.</p></div>
+        <button class="btn btn-block" type="submit">Create account</button>
+      </form>
+
+      <p class="switch">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 CarRentX. All rights reserved.</span>
+    <nav aria-label="Footer">
+      <a href="carselection.html">Cars</a>
+      <a href="start-exploring.html">Explore</a>
+      <a href="booking.html">Booking</a>
+      <a href="login.html">Log in</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
